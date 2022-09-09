@@ -13,10 +13,10 @@ Then inside the container used the following very simple python script to conver
 
 ``import pandas as pd``
 
-``pf = listdir()`` # in the container directory, due to the mounting of local directory to it, it then had the parquet dataset file
+``pf = listdir()`` #in the container directory, due to the mounting of local directory to it, it then had the parquet dataset file
 
-``pfs = pf[0]`` # the parquet dataset filename can be read into the pfs variable
+``pfs = pf[0]`` #the parquet dataset filename can be read into the pfs variable
 
-``df = pd.read_parquet(pfs, engine='pyarrow')`` # Reading the parquet file into a dataframe
+``df = pd.read_parquet(pfs, engine='pyarrow')`` #Reading the parquet file into a dataframe
 
-``df.to_csv('yellow_tripdata_2021-01.csv', index=False)`` # converting the dataframe into a csv file which then due to the mounting is also available in the host machine's directory from the container``
+``df.to_csv('yellow_tripdata_2021-01.csv', index=False)`` #converting the dataframe into a csv file which then due to the mounting is also available in the host machine's directory from the container
