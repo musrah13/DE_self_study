@@ -1,4 +1,5 @@
 Although the folder is called **2_dataset_and_conversion**, I've set the dataset to be untracked by git because of it's huge size. However, the dataset used here can be found from the below location:
+
 https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet
 
 The file was in **.parquet** format and needed to be converted to **.csv**. This is done in a <b>Docker</b> container for which you can see the Dockerfile in this folder. Used the following commands to build and run it:
