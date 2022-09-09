@@ -5,7 +5,7 @@ The file was in **.parquet** format and needed to be converted to **.csv**. This
 
 $ ``docker build -t parquet_to_csv .``
 
-$ ``winpty docker run -it -v /${PWD}:/app/dataset parquet_to_csv***``
+$ ``winpty docker run -it -v /${PWD}:/app/dataset parquet_to_csv``
 
 Then inside the container used the following very simple python script to convert it to csv for later use:
 
